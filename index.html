@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Direct Message</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+        <div class="card shadow-sm p-4">
+            <h1 class="text-center mb-4">WhatsApp Direct Message</h1>
+            <form id="waForm">
+                <div class="form-group">
+                    <label for="phoneNumber">Masukkan nomor hapenya:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="08xxxxxxxxxx" required pattern="08\d{8,11}">
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

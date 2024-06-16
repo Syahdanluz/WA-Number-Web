@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    color: #555;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 4px;
+}
