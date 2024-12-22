@@ -1,8 +1,11 @@
 document.getElementById('waForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    const phoneNumber = document.getElementById('phoneNumber').value.trim();
+    let phoneNumber = document.getElementById('phoneNumber').value.trim();
 
-    // Validate the phone number format
+    // Remove unnecessary symbols like '-', spaces, or parentheses
+    phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
+
+    // Validate the phone number format after cleaning
     const phoneRegex = /^08\d{8,11}$/;
     if (!phoneRegex.test(phoneNumber)) {
         alert('Please enter a valid Indonesian phone number starting with 08');
