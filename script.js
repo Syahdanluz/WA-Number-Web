@@ -1,4 +1,4 @@
-document.getElementById('waForm').addEventListener('submit', function(event) {
+document.getElementById('waForm').addEventListener('submit', function (event) {
     event.preventDefault();
     let phoneNumber = document.getElementById('phoneNumber').value.trim();
 

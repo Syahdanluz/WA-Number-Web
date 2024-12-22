@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp Direct Message</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
@@ -14,9 +13,18 @@
             <form id="waForm">
                 <div class="form-group">
                     <label for="phoneNumber">Masukkan nomor hapenya:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="08xxxxxxxxxx" required pattern="08\d{8,11}">
+                    <input
+                        type="tel"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        class="form-control"
+                        placeholder="08xxxxxxxxxx"
+                        required
+                        pattern="\d.*"
+                        title="Please enter a valid Indonesian phone number"
+                    >
                 </div>
-                <button type="submit" class="btn btn-success btn-block">Kirim</button>
+                <button type="submit" class="btn btn-success btn-block mt-3">Kirim</button>
             </form>
         </div>
     </div>
